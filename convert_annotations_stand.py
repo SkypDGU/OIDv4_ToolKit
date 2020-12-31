@@ -29,7 +29,7 @@ classes = {}
 with open("classes.txt", "r") as myFile:
     for num, line in enumerate(myFile, 0):
         line = line.rstrip("\n")
-        classes[line] = num
+        classes[line] = num+1
     myFile.close()
 # step into dataset directory
 os.chdir(os.path.join("OID", "Dataset"))
